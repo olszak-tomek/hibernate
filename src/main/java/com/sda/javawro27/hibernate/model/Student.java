@@ -1,5 +1,6 @@
 package model;
 
+import com.sda.javawro27.hibernate.model.Behaviour;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -25,15 +26,10 @@ public class Student {
 
     private String firstName;
     private String lastName;
-
-    private double wzrost;
+    private double height;
     private int age;
 
     private boolean alive; // nie isAlive
 
-    public double getHeight() {
-        return this.wzrost;
-    }
-    // lombok jeśli wygeneruje metodę na podstawie pola isAlive, to nazywać się będzie "isIsAlive"
-    // isAlive
+    private Behaviour behaviour;
 }
