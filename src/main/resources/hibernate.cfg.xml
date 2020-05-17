@@ -7,7 +7,7 @@
         <property name="connection.url"> <!--hibernate_students = nazwa bazy danych-->
             jdbc:mysql://localhost:3306/hibernate_students?serverTimezone=Europe/Warsaw&amp;createDatabaseIfNotExist=true
         </property>
-        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        <!-- <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property> -->
         <!-- createDatabaseIfNotExist=true = parametr powoduje stworzenie BAZY DANYCH-->
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <!--powyższa linia służy do wskazania hibernate'owi sterownika bazy danych-->

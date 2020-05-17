@@ -22,7 +22,7 @@ public class HibernateUtil {
 
         } catch (HibernateException he){
             System.err.println(he.getMessage());
-            System.exit(376);
+
             throw he;
         }
     }
