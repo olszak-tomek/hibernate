@@ -6,9 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 
 @Data
@@ -29,7 +27,9 @@ public class Student {
     private double height;
     private int age;
 
+
     private boolean alive; // nie isAlive
 
+    @Enumerated(value = EnumType.STRING)
     private Behaviour behaviour;
 }
