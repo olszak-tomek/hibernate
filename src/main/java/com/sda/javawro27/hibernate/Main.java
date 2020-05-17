@@ -3,7 +3,8 @@ package com.sda.javawro27.hibernate;
 import java.util.Scanner;
 
 import com.sda.javawro27.hibernate.model.Behaviour;
-import model.Student;
+import com.sda.javawro27.hibernate.model.Student;
+
 
 public class Main {
     public static void main(String[] args) {

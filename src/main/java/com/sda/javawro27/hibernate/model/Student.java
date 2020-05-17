@@ -1,6 +1,6 @@
-package model;
+package com.sda.javawro27.hibernate.model;
 
-import com.sda.javawro27.hibernate.model.Behaviour;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

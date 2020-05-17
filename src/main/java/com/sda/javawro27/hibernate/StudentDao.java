@@ -1,5 +1,6 @@
 package com.sda.javawro27.hibernate;
-import model.Student;
+
+import com.sda.javawro27.hibernate.model.Student;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
