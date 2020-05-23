@@ -24,5 +24,6 @@
         <property name="show_sql">true</property>
         <!--TODO: na potem - dopisanie klas obsługiwanych przez hibernate -->
         <mapping class="com.sda.javawro27.hibernate.model.Student"/>
+        <mapping class="com.sda.javawro27.hibernate.model.Grade"/>
     </session-factory>
 </hibernate-configuration>

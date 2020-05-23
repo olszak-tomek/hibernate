@@ -4,31 +4,29 @@ import org.hibernate.HibernateException;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+// Ta klasa załaduje naszą konfigurację bazodanową
 public class HibernateUtil {
-
     private static final SessionFactory ourSessionFactory;
 
-    // blok statyczny - fragment wywołuje się raz przy starcie klasy
-
+    // blok statyczny - fragment kodu który wykonuje się 1 raz przy starcie klasy
     static {
         try {
-            System.out.println("Konfiguruję hibernate");
+            System.out.println("Konfiguruję hibernate.");
 
-            // ta kalsa domyślnie odwołuje się do pliku konfiguracyjnego hibernate w fomacie podanym  w resources
+            /// ta klasa domyślnie odwołuje się do pliku konfiguracyjnego hibernate w formacie podanym w resources
             Configuration configuration = new Configuration();
             configuration.configure("/hibernate.cfg.xml");
 
             ourSessionFactory = configuration.buildSessionFactory();
-
-        } catch (HibernateException he){
+        }catch (HibernateException he){
             System.err.println(he.getMessage());
-
+//            System.exit(376); // liczba która jest kodem błędu - jeśli zobaczymy w logach błąd o tej wartości to oznacza błąd hibernate
             throw he;
         }
     }
-    public static SessionFactory getOurSessionFactory () {
+
+    // wygenerowany getter
+    public static SessionFactory getOurSessionFactory() {
         return ourSessionFactory;
-
     }
-
 }
